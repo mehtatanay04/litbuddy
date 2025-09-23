@@ -3,13 +3,12 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA7qtpFybp7tJex4OEYZwHSMHl6g8GUO6I",
-  authDomain: "litbuddy-b7208.firebaseapp.com",
-  projectId: "litbuddy-b7208",
-  storageBucket: "litbuddy-b7208.firebasestorage.app",
-  messagingSenderId: "131403954017",
-  appId: "1:131403954017:web:eb06791b5fc76f57587720",
-  measurementId: "G-P741TDKSYJ"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "demo-api-key",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "litbuddy-demo.firebaseapp.com",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "litbuddy-demo",
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "litbuddy-demo.appspot.com",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "123456789",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "demo-app-id"
 };
 
 const app = initializeApp(firebaseConfig);
