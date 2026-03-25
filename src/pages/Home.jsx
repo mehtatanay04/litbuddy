@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <Layout>
       <div className="text-center space-y-8">
-        {/* Hero Section */}
+        
         <div className="max-w-4xl mx-auto">
           <div className="text-8xl mb-4">📚✨</div>
           <h1 className="text-5xl font-bold text-gray-800 mb-4">
@@ -23,7 +23,6 @@ const Home = () => {
           </Link>
         </div>
 
-        {/* Features Grid */}
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-12">
           <div className="card text-center">
             <div className="text-6xl mb-4">🎮</div>
@@ -44,7 +43,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Quick Stats */}
+        
         <div className="bg-white/50 rounded-2xl p-6 max-w-md mx-auto">
           <h3 className="font-bold text-lg mb-4">Learning Path</h3>
           <div className="space-y-3">
